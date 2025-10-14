@@ -70,6 +70,20 @@ h2 {
   font-family: "Poppins", sans-serif;  
 }
 
+.header-top-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    }
+    
+
+.header-top-right img {
+    max-width: 2rem;
+    height: auto;
+    padding: 10px;
+}
+
+
 
 .container {
   border: 1px dotted blue;
