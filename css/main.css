@@ -34,6 +34,11 @@ h2 {
   font-size: 3.2rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* ul.menu-main {
   display: none;
@@ -75,13 +80,11 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     }
-    
 
-.header-top-right img {
-    max-width: 2rem;
-    height: auto;
-    padding: 10px;
+.desktop {
+    display: none;
 }
+    
 
 
 
@@ -106,6 +109,8 @@ h2 {
 
 ul.menu-main {
   display: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-navbar {
@@ -162,6 +167,7 @@ ul.menu-main {
     gap: 12rem;
     list-style: none;
     margin: 0;
+    text-decoration: none;
     }
 
     .box-buttons {
@@ -179,6 +185,13 @@ ul.menu-main {
     max-width: 100%;
     padding: 0 4rem;
   }
+
+  .desktop {
+    display: unset;
+  }
+  .mobile {
+    display: none;
+  }
 /**Header*/
 /**Main*/
 /**Aside*/
@@ -191,6 +204,7 @@ ul.menu-main {
     max-width: 100%;
     padding: 0 4rem;
   }
+
   /**Header*/
 /**Main*/
 /**Aside*/
