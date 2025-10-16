@@ -9,34 +9,28 @@
 
   /** colores base*/
 }
-
 html {
   font-size: var(--over-font-size);
   font-size: 14px;
 }
-
 html,
 body {
   height: 100%;
   margin: 0;
 }
-
 body {
   display: flex;
   flex-direction: column;
   margin: 0%;
   font-family: "Poppins", sans-serif;
 }
-
 h3 {
   font-size: 12px
 }
-
 a {
   text-decoration: none;
   color: black;
 }
-
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -45,13 +39,9 @@ ul {
   flex-direction: column;
   row-gap: .5rem;
 }
-
 li {
   margin-bottom: 6px;
 }
-
-
-
 .container {
   border: 1px dotted blue;
   box-sizing: border-box;
@@ -64,14 +54,12 @@ li {
   flex-direction: column;
   align-items: center;
 }
-
 .container-fluid {
   border: 1px solid orangered;
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 100vw;
 }
-
 .main {
   flex: 1;
 }
@@ -80,16 +68,41 @@ li {
 /**Main*/
 /**Aside*/
 
+.main-container{
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 30rem;
+  color: aliceblue;
+  margin-bottom: 10rem;
+  
+}
+.modelos-container{
+  display: none;
+}
+/* .collares-container{
+  display: none;
+}
+.pulseras-container{
+  display: none;
+} */
+.aretes-container{
+  background-image: url("/images/backgroud-aretes.png");
+}
+.anillos-container{
+  background-image: url("/images/backgroud-anillos.png");
+}
 
 /**Footer*/
-
-section,
 footer {
   width: 100%;
   margin: 0;
-}
 
-.container-footer {
+  .container-footer {
   padding: 40px 10px;
 }
 
@@ -168,8 +181,10 @@ form.email-input {
   grid-gap: 1rem;
 }
 
+}
 
 /** Media Queries (break point)*/
+
 @media (width > 567px) {
   .container {
     max-width: 54rem;
@@ -181,7 +196,6 @@ form.email-input {
   /**Aside*/
   /**Footer*/
 }
-
 @media (width > 768px) {
   .container {
     max-width: 72rem;
@@ -199,13 +213,21 @@ form.email-input {
   /**Aside*/
   /**Footer*/
 }
-
 @media (width > 1024px) {
   .container {
     max-width: 99.2rem;
 
     /* padding: 0 4rem;*/
   }
+
+  .modelos-container{
+  display: flex;
+  height: 50rem;
+  background-image: url("/images/backgroud-modelos-1.png");
+}
+
+
+  /* footer */
 
   .raya {
     border-top: none;
@@ -253,7 +275,6 @@ form.email-input {
   /**Footer*/
 
 }
-
 @media (width > 1200px) {
   .container {
     max-width: 99.2rem;
@@ -265,7 +286,6 @@ form.email-input {
   /**Aside*/
   /**Footer*/
 }
-
 @media (width > 1400px) {
   .container {
     max-width: 132rem;
@@ -277,7 +297,6 @@ form.email-input {
   /**Aside*/
   /**Footer*/
 }
-
 @media (width > 1600px) {
   .container {
     max-width: 144rem;
@@ -289,7 +308,6 @@ form.email-input {
   /**Aside*/
   /**Footer*/
 }
-
 @media (width > 1920px) {
   .container {
     max-width: 160rem;
