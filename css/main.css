@@ -135,6 +135,13 @@ h2.main_tittle {
     font-family: "Playfair", sans-serif;
 }
 
+h3.main_tittle-2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
 
 .necklaces {
   background-image: url("/images/background-necklaces.webp");
@@ -161,6 +168,17 @@ h2.main_tittle {
   position: relative;
   height: 300px;
   color: aliceblue;
+}
+
+.partners-2 {
+ display: grid;
+ align-items: center;
+ gap: 2rem;
+ margin-top: 5rem;
+}
+
+.partners-2.container-image {
+    justify-content: space-evenly;
 }
 
 
@@ -210,6 +228,9 @@ h2.main_tittle {
     display: flex;
     gap: 1rem;
 }
+
+
+
   /**Header*/
 /**Main*/
 /**Aside*/
@@ -228,6 +249,17 @@ h2.main_tittle {
   .mobile {
     display: none;
   }
+
+   .partners-2 {
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+ margin-top: 5rem;
+}
+
+.partners-2.container-image {
+    justify-content: space-evenly;
+} 
 /**Header*/
 /**Main*/
 /**Aside*/
