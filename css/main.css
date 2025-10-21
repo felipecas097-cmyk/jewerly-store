@@ -68,12 +68,15 @@ a {
     height: auto;
 }
 
-.header_tittle {
+.img-logo {
+    height: 20rem;
+}
+/* .header_tittle {
   text-align: center;
   font-size: 4rem;
   margin: 10px 0;
   font-family: "Poppins", sans-serif;  
-}
+} */
 
 .header-top-right {
     display: flex;
