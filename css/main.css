@@ -80,27 +80,92 @@ li {
 /**Main*/
 /**Aside*/
 
-.main-container {
+.modelos-container {
+  display: flex;
   background-size: cover;
   background-position: center;
-  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
   height: 30rem;
-  color: black;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem auto;
+  overflow: hidden; /* NO SE PARA QUE ES*/
+}
 
+.modelos-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.7) 0%,
+      /* oscuro en el borde izquierdo */
+      transparent 20%,
+      /* se desvanece hacia el centro */
+      transparent 80%,
+      /* mantiene el centro limpio */
+      rgba(0, 0, 0, 0.7) 100%
+      /* oscuro en el borde derecho */
+    );
+  pointer-events: none;
+  z-index: 2; /* NO SE PARA QUE ES*/
 }
 
 /* modelos-container */
 .carousel {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  position: relative;
+  overflow: hidden; /* NO SE PARA QUE ES*/
+  z-index: 0; /* NO SE PARA QUE ES*/ 
+  overflow-x: auto; /* NO SE PARA QUE ES*/
+  overflow-y: hidden; /* NO SE PARA QUE ES*/
+  scroll-behavior: smooth;
+  anchor-name: --carousel;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  scroll-snap-type: x mandatory; /* NO SE PARA QUE ES*/
+  -webkit-overflow-scrolling: touch; /* NO SE PARA QUE ES*/
 }
+
+.carousel::scroll-button(left),
+.carousel::scroll-button(right) {
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* NO SE PARA QUE ES*/
+  position-anchor: --carousel;/* NO SE PARA QUE ES*/
+  cursor: pointer;
+  border: none;
+  background-color: #3d25b4;
+  font-family: Consolas;
+  font-size: 3rem;
+  color: white;
+  height: 60px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  z-index: 3;/* NO SE PARA QUE ES*/
+
+}
+
+.carousel::scroll-button(right) {
+  /* ← / ↑ / ↓ / → */
+  content: "→";
+  position-area: right center;
+  translate: -150%;
+}
+
+.carousel::scroll-button(left) {
+  /* ← / ↑ / ↓ / → */
+  content: "←";
+  position-area: left center;
+  translate: 150%;
+}
+
+.carousel::scroll-button(left):disabled,
+.carousel::scroll-button(right):disabled {
+  opacity: .5;
+  cursor: auto;
+}
+
 
 .carousel::-webkit-scrollbar {
   display: none;
@@ -108,33 +173,33 @@ li {
 
 .group {
   display: flex;
+  flex-shrink: 0;
+  width: max-content;
+  scroll-snap-align: center;
   align-content: center;
   justify-content: center;
-  gap: 1em;
-  animation: spin 60s infinite linear;
-  padding-right: 1em;
+  gap: 0;
+  /* animation: spin 30s infinite linear; */
 }
 
 .card {
-  flex: 0 0 5em;
-  height: 450px;
-  font-size: 4rem;
+  flex: 0 0 100vw;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
 }
 
 .modelos-container-img {
-  height: 100%;
-  width: 800px;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  object-fit: cover;
 }
 
-/* .card1{
-  background-image: url("/images/backgroud-modelos-1.png");
+.modelos-container:hover .group {
+  animation-play-state: paused;
 }
-.card2{
-  background-image: url("/images/backgroud-modelos-2.png");
-}
-.card3{
-  background-image: url("/images/backgroud-modelos-3.png");
-} */
 
 @keyframes spin {
   from {
@@ -287,37 +352,18 @@ footer {
   }
 
   /* .carousel{
-  border: 5px solid red;
-  display: flex;
-  overflow-x: auto;
 } 
 
 .carousel::-webkit-scrollbar {
-  display: none;
 }
 
 .group{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 1em;
-  animation: spin 5s infinite linear;
 }
 
 .card{
-  flex: 0 0 5em;
-  height: 12em;
-  padding: 1em;
-  background: cornflowerblue;
-  font-size: 3rem;
-  border-radius: .2em;
-  text-align: center; 
-  align-content: center;
 }
 
 @keyframes spin{
-  from {translate: 0;}
-  to {translate: 0;}
 } */
 
   .modelos-container {
@@ -328,13 +374,6 @@ footer {
 
   /* footer */
 
-  .raya {
-    border-top: none;
-    border-bottom: none;
-    border-right: 1px solid #c27676;
-    border-left: 1px solid #c27676;
-    ;
-  }
 
   .container-footer {
     flex: 1;
