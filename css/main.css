@@ -78,7 +78,149 @@ li {
 
 /**Header*/
 /**Main*/
-/**Aside*/
+
+.modelos-container{
+  display: none;
+}
+/* .collares-container{
+  display: none;
+}
+.pulseras-container{
+  display: none;
+}
+*/
+.aretes-container {
+  background-image: url("/images/backgroud-aretes.png");
+}
+
+.anillos-container {
+  background-image: url("/images/backgroud-anillos.png");
+}
+
+/**Footer*/
+footer {
+  width: 100%;
+  margin: 0;
+
+  .container-footer {
+    padding: 40px 10px;
+  }
+
+  .raya {
+
+    border-top: 1px solid #c27676;
+    border-bottom: 1px solid #c27676;
+
+  }
+
+  .horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .texto p {
+    margin: 0;
+  }
+
+  input[type="email"] {
+
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 24px;
+  }
+
+  button[type=submit] {
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    padding: 10px 43px;
+    color: #fff;
+    background-color: #141414;
+    border: 1px solid transparent;
+  }
+
+
+  form.email-input {
+    display: inline-flex;
+    padding: 2rem 0 .5rem 0;
+  }
+
+
+  .container-redes-sociales-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .redes-sociales-images {
+    display: flex;
+    padding: 1rem;
+    max-height: 1rem;
+    max-width: 2rem;
+  }
+
+
+  .metodo_de_pago {
+    width: 206px;
+    height: 21px;
+  }
+
+  .footer_container--bottom {
+    display: inline-block;
+    width: 100%;
+    background-color: #cecbc7;
+    padding: 3rem;
+    grid-gap: 1rem;
+  }
+
+}
+
+/** Media Queries (break point)*/
+
+@media (width > 567px) {
+  .container {
+    max-width: 54rem;
+    /* padding: 0 1.6rem; */
+  }
+
+  /**Header*/
+  /**Main*/
+  /**Aside*/
+  /**Footer*/
+}
+
+@media (width > 768px) {
+  .container {
+    max-width: 72rem;
+    /* padding: 0 2.4rem; */
+  }
+
+  .container.footer_container.footer_container--bottom.inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /**Header*/
+  /**Main*/
+  /**Aside*/
+  /**Footer*/
+}
+
+@media (width > 1024px) {
+  .container {
+    max-width: 99.2rem;
+
+    /* padding: 0 4rem;*/
+  }
 
 .modelos-container {
   display: flex;
@@ -240,161 +382,6 @@ li {
     translate: -100%;
   }
 }
-
-/* .collares-container{
-  display: none;
-}
-.pulseras-container{
-  display: none;
-}
-*/
-.aretes-container {
-  background-image: url("/images/backgroud-aretes.png");
-}
-
-.anillos-container {
-  background-image: url("/images/backgroud-anillos.png");
-}
-
-/**Footer*/
-footer {
-  width: 100%;
-  margin: 0;
-
-  .container-footer {
-    padding: 40px 10px;
-  }
-
-  .raya {
-
-    border-top: 1px solid #c27676;
-    border-bottom: 1px solid #c27676;
-
-  }
-
-  .horario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .texto {
-    text-align: center;
-  }
-
-  .texto p {
-    margin: 0;
-  }
-
-  input[type="email"] {
-
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-    box-sizing: border-box;
-    cursor: pointer;
-    line-height: 24px;
-  }
-
-  button[type=submit] {
-    font-family: Poppins, sans-serif;
-    font-size: 12px;
-    padding: 10px 43px;
-    color: #fff;
-    background-color: #141414;
-    border: 1px solid transparent;
-  }
-
-
-  form.email-input {
-    display: inline-flex;
-    padding: 2rem 0 .5rem 0;
-  }
-
-
-  .container-redes-sociales-images {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .redes-sociales-images {
-    display: flex;
-    padding: 1rem;
-    max-height: 1rem;
-    max-width: 2rem;
-  }
-
-
-  .metodo_de_pago {
-    width: 206px;
-    height: 21px;
-  }
-
-  .footer_container--bottom {
-    display: inline-block;
-    width: 100%;
-    background-color: #cecbc7;
-    padding: 3rem;
-    grid-gap: 1rem;
-  }
-
-}
-
-/** Media Queries (break point)*/
-
-@media (width > 567px) {
-  .container {
-    max-width: 54rem;
-    /* padding: 0 1.6rem; */
-  }
-
-  /**Header*/
-  /**Main*/
-  /**Aside*/
-  /**Footer*/
-}
-
-@media (width > 768px) {
-  .container {
-    max-width: 72rem;
-    /* padding: 0 2.4rem; */
-  }
-
-  .container.footer_container.footer_container--bottom.inferior {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  /**Header*/
-  /**Main*/
-  /**Aside*/
-  /**Footer*/
-}
-
-@media (width > 1024px) {
-  .container {
-    max-width: 99.2rem;
-
-    /* padding: 0 4rem;*/
-  }
-
-  /* .carousel{
-} 
-
-.carousel::-webkit-scrollbar {
-}
-
-.group{
-}
-
-.card{
-}
-
-@keyframes spin{
-} */
 
   .modelos-container {
     display: flex;
