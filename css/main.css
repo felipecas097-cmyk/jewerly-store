@@ -344,32 +344,8 @@ footer {
   animation-play-state: paused;
 } */
 
-.group .card1 p {
+.group .card p {
     position: absolute;
-    right: 24rem;
-    top: 11rem;
-    display: block;
-}
-.group .card2 p {
-    position: absolute;
-    right: 16.5rem;
-    display: block;
-    top: 20rem;
-}
-.group .card3 p {
-    position: absolute;
-    right: 17rem;
-    top: 6rem;
-    display: block;
-}
-.group .card4 p {
-    position: absolute;
-    display: block;
-}
-.group .card5 p {
-    position: absolute;
-    left: 34rem;
-    bottom: 6rem;
     display: block;
 }
 
