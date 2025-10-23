@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
+
 
             <div class="header-top">
                 <div class="header-top-left">
@@ -39,6 +42,41 @@
         </div>        
     </header>
     <main class="main">
+        <section class="main-container modelos-container">
+            <!-- div.carousel>div.group>div.cardf$t*6 ==> crea varios div con CONTENIDO ascendente -->
+
+            <div class="carousel">
+                <div class="group">
+                    <div class="card card1">
+                        <img class="modelos-container-img" src="/images/backgroud-modelos-2.png"
+                            alt="backgroud-modelos-1">
+                            <p>A Touch of Royalty</p>
+                    </div>
+                    <div class="card card2">
+                        <img class="modelos-container-img" src="/images/backgroud-modelos-1.png"
+                            alt="backgroud-modelos-2">
+                            <p>Marriage promise</p>
+                    </div>
+                    <div class="card card3">
+                        <img class="modelos-container-img" src="/images/backgroud-modelos-3.png"
+                            alt="backgroud-modelos-3">
+                            <p>Soft Elegance</p>
+                    </div>
+                    <div class="card card4">
+                        <img class="modelos-container-img" src="/images/backgroud-modelos-4.png"
+                            alt="backgroud-modelos-4">
+                            <p>Crafted Confidence</p>
+                    </div>
+                    <div class="card card5">
+                        <img class="modelos-container-img" src="/images/backgroud-modelos-5.png"
+                            alt="backgroud-modelos-5">
+                            <p>Own the Moment</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div.carousel>div.group>div.card.card$*5  ==> crea varios div con CLASE ascendente -->
+        </section>
         <a href="#" class="necklaces-link">
         <section class="necklaces">         
           <h2 class="main_tittle">Necklaces</h2>
@@ -49,6 +87,18 @@
         <section class="bracelets">         
           <h2 class="main_tittle">Bracelets</h2>
         </section>
+        </a>
+
+        <a href="#" class="aretes-link">
+            <section class="main-container aretes-container">
+                <h2 class="main-tittle">ARETES</h2>
+            </section>
+        </a>
+        
+        <a href="#" class="anillos-link">
+            <section class="main-container anillos-container">
+                <h2 class="main-tittle">ANILLOS</h2>
+            </section>
         </a>
         
          <section class="partners">         
@@ -64,11 +114,102 @@
             </div>
 
         </section>
+
     </main>
-    <footer class="footer">
-        <div class="container">
-            <h2 class="footer_title">Footer</h2>
+    <footer class="footer*">
+        <section class="footer">
+            <div class="footer_container footer_container--top">
+                <div class="raya container container-footer container-contact">
+                    <h2 class="contact_tittle">Contacto</h2>
+                    <div class="horario">
+                        <small>Horario de trabajo de lunes a viernes de 8 a 18 h UTC-5</small>
+                        <br />
+                        <a rel="noreferrer noopener" href="tel:+57 3213347232" data-type="tel" data-id="tel:123456789"
+                            target="_blank">+57 3213347232</a>
+                        <!--  <br/> => es para poner un "punto aparte" -->
+                    </div>
+                </div>
+                <div class="container container-footer container-correo">
+                    <h2 class="contact_tittle">¡Pongámonos en contacto!</h2>
+                    <div class="texto">
+                        <p>¿Qué hay dentro? Ventas exclusivas, novedades y mucho más.</p>
+                    </div>
+                    <form class="email-input" action="/registrar" method="POST">
+                        <input type="email" placeholder="Tu correo"> <!-- placehorder => texto "predeterminado"-->
+                        <button type="submit">Registrate</button>
+                    </form>
+
+                    <small>* Acepto la política de privacidad y cookies para recibir </small>
+                </div>
+                <div class="raya container container-footer container-redes-sociales">
+                    <h2 class="contact_tittle">Redes Sociales</h2>
+                    <div class="container container-redes-sociales-images">
+                        <a href="#"><img class="redes-sociales-images facebook-image" src="./images/facebook-logo.png"
+                                alt="facebook"></a>
+                        <a href="#"><img class="redes-sociales-images instagram" src="./images/instagram-logo.png"
+                                alt="instagram"></a>
+                        <a href="#"><img class="redes-sociales-images github-image" src="./images/github-logo.png"
+                                alt="github"></a>
+                        <a href="#"><img class="redes-sociales-images youtube-image" src="./images/youtube-logo.png"
+                                alt="youtube"></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container footer_container footer_container--bottom">
+            <div class="footer_container superior">
+                <div class="detalles footer_container">
+                    <div class="desktop pago">
+
+                        <h2>Joyería Ascella</h2>
+                        <img class="metodo_de_pago desktop" src="./images/metodos-de-pago.png" alt="metodos de pago">
+                    </div>
+
+                    <div class="general desktop desktop-menu">
+                        <h3>General</h3>
+                        <ul>
+                            <!-- li.menu_item*6>a.menu__link == PARA GENERAD VARIOS <li> CON SUS CLASES Y ELEMTNOS DE GOLPE-->
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Envío</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Estado del pedido</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Intercambios y devoluciones</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Guía de tallas</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Cuidado de las joyas</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Preguntas frecuentes</li>
+                            <!-- Ctrl + Alt + ↓ para agregar cursores y escribir varias a la vez -->
+                        </ul>
+                    </div>
+                    <div class="acerca_de desktop desktop-menu">
+                        <h3>Acerca de</h3>
+                        <ul>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Nuestro mundo</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Nuestro embalaje</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Nuestro Cliente</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Historias</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Tarjetas de regalo</li>
+                        </ul>
+                    </div>
+                    <div class="categorias desktop desktop-menu">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Nuevo en</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Pendientes</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Anillos</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Collar</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Pulseras</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Accesorios</li>
+                            <li class="menu_item"><a href="#" class="menu__link"></a>Todas las joyas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container footer_container footer_container--bottom inferior">
+            <p>© 2025 alo Todos los derechos reservados</p>
+            <p>jewerly_store@prospecto.com</p>
+        </div>
+
     </footer>
 </body>
+
 </html>
