@@ -22,9 +22,9 @@
                 <div class="header-top-logo"><img class="img img-logo" src="./images/logo.png" alt="background logo"></div>
                 <div class="header-top-right">    
 
-                  <a href="#"><i class="fa-solid fa-user desktop"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart desktop"></i></a>
-                  <a href="#"><i class="fa-solid fa-cart-shopping desktop"></i></a>
+                  <a href="#"><i class="fa-solid fa-user header-i"></i></a>
+                  <a href="#"><i class="fa-solid fa-heart header-i"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-shopping header-i"></i></a>
                   <a href="#"><i class="fa-solid fa-bars mobile"></i></a>
                </div>
 
@@ -78,26 +78,26 @@
             <!-- div.carousel>div.group>div.card.card$*5  ==> crea varios div con CLASE ascendente -->
         </section>
         <a href="#" class="necklaces-link">
-        <section class="necklaces">         
+        <section class="necklaces background-section">         
           <h2 class="main_tittle">Necklaces</h2>
         </section>
         </a>
 
         <a href="#" class="bracelets-link">
-        <section class="bracelets">         
+        <section class="bracelets background-section">         
           <h2 class="main_tittle">Bracelets</h2>
         </section>
         </a>
 
-        <a href="#" class="aretes-link">
-            <section class="main-container aretes-container">
-                <h2 class="main-tittle">ARETES</h2>
+        <a href="#" class="earrings-link">
+            <section class="earrings background-section">
+                <h2 class="main_tittle">Earrings</h2>
             </section>
         </a>
         
-        <a href="#" class="anillos-link">
-            <section class="main-container anillos-container">
-                <h2 class="main-tittle">ANILLOS</h2>
+        <a href="#" class="rings-link">
+            <section class="rings background-section">
+                <h2 class="main_tittle">Rings</h2>
             </section>
         </a>
         
@@ -119,7 +119,7 @@
     <footer class="footer*">
         <section class="footer">
             <div class="footer_container footer_container--top">
-                <div class="raya container container-footer container-contact">
+                <div class="container container-footer container-contact">
                     <h2 class="contact_tittle">Contacto</h2>
                     <div class="horario">
                         <small>Horario de trabajo de lunes a viernes de 8 a 18 h UTC-5</small>
@@ -141,7 +141,7 @@
 
                     <small>* Acepto la política de privacidad y cookies para recibir </small>
                 </div>
-                <div class="raya container container-footer container-redes-sociales">
+                <div class="container container-footer container-redes-sociales">
                     <h2 class="contact_tittle">Redes Sociales</h2>
                     <div class="container container-redes-sociales-images">
                         <a href="#"><img class="redes-sociales-images facebook-image" src="./images/facebook-logo.png"
@@ -160,13 +160,10 @@
         <div class="container footer_container footer_container--bottom">
             <div class="footer_container superior">
                 <div class="detalles footer_container">
-                    <div class="desktop pago">
-
-                        <h2>Joyería Ascella</h2>
-                        <img class="metodo_de_pago desktop" src="./images/metodos-de-pago.png" alt="metodos de pago">
+                    <div class="logo-footer">
+                        <img class="img img-logo img-logo-footer" src="./images/logo.png" alt="background logo">
                     </div>
-
-                    <div class="general desktop desktop-menu">
+                    <div class="general footer-menu">
                         <h3>General</h3>
                         <ul>
                             <!-- li.menu_item*6>a.menu__link == PARA GENERAD VARIOS <li> CON SUS CLASES Y ELEMTNOS DE GOLPE-->
@@ -179,7 +176,7 @@
                             <!-- Ctrl + Alt + ↓ para agregar cursores y escribir varias a la vez -->
                         </ul>
                     </div>
-                    <div class="acerca_de desktop desktop-menu">
+                    <div class="acerca_de footer-menu">
                         <h3>Acerca de</h3>
                         <ul>
                             <li class="menu_item"><a href="#" class="menu__link"></a>Nuestro mundo</li>
@@ -189,7 +186,7 @@
                             <li class="menu_item"><a href="#" class="menu__link"></a>Tarjetas de regalo</li>
                         </ul>
                     </div>
-                    <div class="categorias desktop desktop-menu">
+                    <div class="categorias footer-menu">
                         <h3>Categorias</h3>
                         <ul>
                             <li class="menu_item"><a href="#" class="menu__link"></a>Nuevo en</li>
@@ -202,6 +199,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="metodos-de-pago">
+                <img class="metodo_de_pago_img" src="./images/metodos-de-pago.png" alt="metodos de pago">
             </div>
         </div>
         <div class="container footer_container footer_container--bottom inferior">
