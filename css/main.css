@@ -1,6 +1,7 @@
 @import url("./normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 /**variables globales*/
 :root {
@@ -431,12 +432,12 @@ form.email-input {
     /* NO SE PARA QUE ES*/
     cursor: pointer;
     border: none;
-    background-color: #3d25b4;
+    background-color: transparent; 
     font-family: Consolas;
     font-size: 3rem;
-    color: white;
+    color: #cecbc7;
     height: 60px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding-bottom: .1em;
     z-index: 3;
     /* NO SE PARA QUE ES*/
@@ -495,14 +496,36 @@ form.email-input {
     object-fit: cover;
   }
 
+
+
   /* .modelos-container:hover .group {
   animation-play-state: paused;
 } */
 
-  .group .card p {
+  .card h1 {
     position: absolute;
     display: block;
+    font-family: "Playfair", sans-serif;
+    font-size: 9rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   }
+
+  .card1 h1 {
+    color: #1b2c60;
+  }
+
+  .card2 h1 {
+    color: #48341f;
+    }
+  .card3 h1 {
+    color: #453222;
+    }
+  .card4 h1 {
+    color: #fbf3e0;
+    }
+  .card5 h1 {
+    color: #ffffff;
+    }
 
   @keyframes spin {
     from {
@@ -534,7 +557,7 @@ form.email-input {
     display: none;
   }
 
-  
+
 
 
   .footer_container.footer_container--top {
