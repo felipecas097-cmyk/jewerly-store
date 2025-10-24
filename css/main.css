@@ -281,10 +281,8 @@ form.email-input {
 }
 
 .redes-sociales-images {
-  display: flex;
-  padding: 1rem;
-  max-height: 1rem;
-  max-width: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .img-logo-footer {
