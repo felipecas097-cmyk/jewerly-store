@@ -110,6 +110,7 @@ li {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.8rem;
+  padding-left: 1rem;
 }
 
 .header-top-left img {
@@ -118,7 +119,7 @@ li {
 }
 
 .img-logo {
-  height: 20rem;
+  height: 10rem;
 }
 
 .header-top-right {
@@ -126,6 +127,7 @@ li {
   align-items: center;
   gap: 1rem;
   font-size: 1.8rem;
+  padding-right: 1rem;
 }
 
 
@@ -326,15 +328,9 @@ form.email-input {
     flex-direction: row;
   }
 
-  
-
-  ul.menu-main {
-    display: flex;
-    gap: 12rem;
-    list-style: none;
-    margin: 0;
-    text-decoration: none;
-  }
+  .img-logo {
+  height: 20rem;
+}
 
   .box-buttons {
     display: flex;
@@ -354,7 +350,13 @@ form.email-input {
     display: unset;
   }
 
-  
+   ul.menu-main {
+    display: flex;
+    gap: 12rem;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+  }
 
   .mobile {
     display: none;
