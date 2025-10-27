@@ -97,9 +97,6 @@ li {
 
 /*HEADER*/
 
-.header {
-  border: 1px dotted red;
-}
 
 .header-top {
   align-items: center;
@@ -112,6 +109,7 @@ li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 1.8rem;
 }
 
 .header-top-left img {
@@ -127,7 +125,9 @@ li {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.8rem;
 }
+
 
 .header-i {
   display: none;
@@ -136,7 +136,8 @@ li {
 ul.menu-main {
   display: none;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair", sans-serif;
+  font-size: 1.8rem;
 }
 
 .nav-navbar {
@@ -325,6 +326,8 @@ form.email-input {
     flex-direction: row;
   }
 
+  
+
   ul.menu-main {
     display: flex;
     gap: 12rem;
@@ -350,6 +353,8 @@ form.email-input {
   .header-i {
     display: unset;
   }
+
+  
 
   .mobile {
     display: none;
