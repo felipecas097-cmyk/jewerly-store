@@ -88,14 +88,7 @@ li {
   align-items: center;
 }
 
-.container-fluid {
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 /*HEADER*/
-
 
 .header-top {
   align-items: center;
@@ -110,11 +103,6 @@ li {
   gap: 0.5rem;
   font-size: 1.8rem;
   padding-left: 1rem;
-}
-
-.header-top-left img {
-  max-width: 5rem;
-  height: auto;
 }
 
 .img-logo-header {
@@ -284,8 +272,8 @@ form.email-input {
 }
 
 .redes-sociales-images {
-    padding: 1rem;
-    font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .img-logo-footer {
@@ -328,8 +316,8 @@ form.email-input {
   }
 
   .img-logo-header {
-  height: 20rem;
-}
+    height: 20rem;
+  }
 
   .box-buttons {
     display: flex;
@@ -382,13 +370,14 @@ form.email-input {
     height: 30rem;
     margin: 0 auto 10rem auto;
     overflow: hidden;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
   }
 
   .modelos-container::after {
     content: "";
     position: absolute;
     inset: 0;
+    /* NO SE PARA QUE ES */
     background: linear-gradient(to right,
         rgba(0, 0, 0, 0.7) 0%,
         /* oscuro en el borde izquierdo */
@@ -401,7 +390,7 @@ form.email-input {
       );
     pointer-events: none;
     z-index: 2;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
   }
 
   .carousel {
@@ -409,21 +398,19 @@ form.email-input {
     display: flex;
     position: relative;
     overflow: hidden;
-    /* NO SE PARA QUE ES*/
     z-index: 0;
-    /* NO SE PARA QUE ES*/
     overflow-x: auto;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
     overflow-y: hidden;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
     scroll-behavior: smooth;
     anchor-name: --carousel;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     scroll-snap-type: x mandatory;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
     -webkit-overflow-scrolling: touch;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
   }
 
   .carousel::scroll-button(left),
@@ -431,20 +418,17 @@ form.email-input {
     align-items: center;
     justify-content: center;
     position: fixed;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
     position-anchor: --carousel;
-    /* NO SE PARA QUE ES*/
+    /* NO SE PARA QUE ES */
     cursor: pointer;
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
     font-size: 3rem;
     color: #cecbc7;
     height: 60px;
-    /* border-radius: 50%; */
     padding-bottom: .1em;
     z-index: 3;
-    /* NO SE PARA QUE ES*/
-
   }
 
   .carousel::scroll-button(right) {
@@ -519,16 +503,19 @@ form.email-input {
 
   .card2 h1 {
     color: #48341f;
-    }
+  }
+
   .card3 h1 {
     color: #453222;
-    }
+  }
+
   .card4 h1 {
     color: #fbf3e0;
-    }
+  }
+
   .card5 h1 {
     color: #ffffff;
-    }
+  }
 
   @keyframes spin {
     from {
