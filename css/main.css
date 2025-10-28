@@ -89,7 +89,6 @@ li {
 }
 
 .container-fluid {
-  border: 1px solid orangered;
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 100%;
@@ -118,7 +117,7 @@ li {
   height: auto;
 }
 
-.img-logo {
+.img-logo-header {
   height: 10rem;
 }
 
@@ -328,7 +327,7 @@ form.email-input {
     flex-direction: row;
   }
 
-  .img-logo {
+  .img-logo-header {
   height: 20rem;
 }
 
@@ -350,7 +349,7 @@ form.email-input {
     display: unset;
   }
 
-   ul.menu-main {
+  ul.menu-main {
     display: flex;
     gap: 12rem;
     list-style: none;
